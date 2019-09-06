@@ -1,13 +1,16 @@
+environment: &environment
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      node-version: [8, 10, 12]
+
 name: CI
 
 on: [push]
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [8, 10, 12]
+    <<: *environment
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -21,10 +24,7 @@ jobs:
       env:
         CI: true
   other:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [8, 10, 12]
+    <<: *environment
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
