@@ -21,7 +21,7 @@
     "eslint": "^6.3.0"
   },
   "eslintConfig": {
-    "env": { "es6": true },
+    "env": { "es6": true, "browser": true },
     "extends": ["eslint:recommended"]
   }
 }
