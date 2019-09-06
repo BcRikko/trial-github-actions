@@ -1,0 +1,27 @@
+{
+  "name": "trial-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BcRikko/trial-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BcRikko/trial-github-actions/issues"
+  },
+  "homepage": "https://github.com/BcRikko/trial-github-actions#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  },
+  "eslintConfig": {
+    "env": { "es6": true },
+    "extends": ["eslint:recommended"]
+  }
+}
